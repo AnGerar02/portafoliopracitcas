@@ -16,19 +16,5 @@ nav.querySelectorAll("a").forEach((link) => {
   link.addEventListener("click", () => setMenu(false));
 });
 
-// Filtro de piezas
-const filters = document.querySelectorAll(".filter");
-const pieces = document.querySelectorAll(".piece");
-
-filters.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const type = btn.dataset.filter;
-    filters.forEach((b) => b.classList.toggle("is-active", b === btn));
-    pieces.forEach((piece) => {
-      piece.classList.toggle("is-hidden", type !== "todo" && piece.dataset.type !== type);
-    });
-  });
-});
-
 // Año del footer
 document.getElementById("year").textContent = new Date().getFullYear();
