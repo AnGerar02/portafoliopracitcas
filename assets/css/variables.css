@@ -14,6 +14,7 @@
   --color-accent-2: #6c4dff;     /* acento secundario */
   --color-placeholder: #ece7df;
   --color-placeholder-ink: #8a8490;
+  --color-logo-bg: #ffffff;       /* fondo de logos: blanco también en modo oscuro */
 
   /* Tipografía */
   --font-display: "Space Grotesk", system-ui, sans-serif;

@@ -9,7 +9,8 @@ Sitio estático (HTML/CSS/JS) para GitHub Pages. Enfoque: diseño de contenido p
 - `assets/js/main.js`: menú móvil y filtro de piezas.
 - `assets/img/cuentas/`: portadas de cada cuenta.
 - `assets/img/piezas/`: posts (4:5), historias y reels (9:16).
-- `assets/img/otros/`: ilustración, diagramación, Biblián Vive.
+- `assets/img/marcas/`: identidad de marca.
+- `assets/img/web/`: capturas de Biblián Vive, el portafolio y automatizaciones.
 
 ## Pendientes
 Buscar `[COMPLETAR]` y `[...]` en `index.html`.
