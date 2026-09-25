@@ -1,0 +1,88 @@
+/* ==========================================================
+   TOKENS — todos los valores del sitio salen de aquí
+   ========================================================== */
+:root {
+  /* Color */
+  --color-bg: #faf8f5;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f1ede7;
+  --color-ink: #16141a;
+  --color-ink-soft: #5b5763;
+  --color-line: #e2ddd5;
+  --color-accent: #ff5a36;       /* acento principal */
+  --color-accent-ink: #ffffff;
+  --color-accent-2: #6c4dff;     /* acento secundario */
+  --color-placeholder: #ece7df;
+  --color-placeholder-ink: #8a8490;
+
+  /* Tipografía */
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.625rem;
+  --fs-2xl: clamp(2rem, 6vw, 3rem);
+  --fs-hero: clamp(2.75rem, 10vw, 5.5rem);
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.3;
+  --lh-body: 1.6;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Espaciado */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 6rem;
+
+  --gutter: 1rem;
+  --container: 72rem;
+  --header-h: 4rem;
+
+  /* Forma */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.75rem;
+  --radius-pill: 999px;
+  --border: 1px solid var(--color-line);
+
+  /* Elevación */
+  --shadow-sm: 0 1px 3px rgb(22 20 26 / 0.08);
+  --shadow-md: 0 8px 24px rgb(22 20 26 / 0.1);
+
+  /* Interacción */
+  --tap-min: 48px;
+  --transition: 180ms ease;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #121015;
+    --color-surface: #1b1920;
+    --color-surface-alt: #231f29;
+    --color-ink: #f4f1ec;
+    --color-ink-soft: #aaa4b3;
+    --color-line: #302b37;
+    --color-placeholder: #26222c;
+    --color-placeholder-ink: #7d7787;
+    --shadow-md: 0 8px 24px rgb(0 0 0 / 0.4);
+  }
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --gutter: 2rem;
+    --header-h: 4.5rem;
+  }
+}

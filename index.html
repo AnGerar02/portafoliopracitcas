@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[Tu nombre] · Portafolio</title>
+  <meta name="description" content="Portafolio de diseño gráfico y contenido para redes sociales.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#inicio">[Tu nombre]</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#cuentas">Cuentas</a>
+        <a href="#piezas">Piezas</a>
+        <a href="#otros">Otros trabajos</a>
+        <a href="#herramientas">Herramientas</a>
+        <a class="nav__cta" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <p class="eyebrow">Diseño gráfico · Contenido para redes sociales</p>
+        <h1 class="hero__title">Hola, soy <span class="accent">[Tu nombre]</span></h1>
+        <p class="hero__lead">[COMPLETAR: una o dos líneas sobre qué haces y qué te interesa en redes sociales.]</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#cuentas">Ver mi trabajo</a>
+          <a class="btn btn--ghost" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CUENTAS ================= -->
+    <section class="section" id="cuentas">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">01</p>
+          <h2 class="section__title">Cuentas que manejo</h2>
+          <p class="section__lead">[COMPLETAR: breve introducción a las cuentas.]</p>
+        </header>
+
+        <div class="accounts">
+          <!-- Duplicar este bloque por cada cuenta -->
+          <article class="account">
+            <div class="account__cover placeholder">Imagen del perfil / pieza principal</div>
+            <div class="account__body">
+              <p class="account__platform">[Instagram / TikTok / Facebook]</p>
+              <h3 class="account__name">[Nombre de la cuenta]</h3>
+              <p class="account__meta">[Periodo: 2025 – actualidad]</p>
+              <ul class="tags">
+                <li>[Diseño]</li>
+                <li>[Copy]</li>
+                <li>[Video]</li>
+              </ul>
+              <p class="account__text">[COMPLETAR: qué hiciste y qué resultados hubo.]</p>
+              <a class="btn btn--small" href="#" target="_blank" rel="noopener">Ver perfil ↗</a>
+            </div>
+          </article>
+
+          <article class="account">
+            <div class="account__cover placeholder">Imagen del perfil / pieza principal</div>
+            <div class="account__body">
+              <p class="account__platform">[Plataforma]</p>
+              <h3 class="account__name">[Nombre de la cuenta]</h3>
+              <p class="account__meta">[Periodo]</p>
+              <ul class="tags">
+                <li>[Rol]</li>
+              </ul>
+              <p class="account__text">[COMPLETAR]</p>
+              <a class="btn btn--small" href="#" target="_blank" rel="noopener">Ver perfil ↗</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PIEZAS ================= -->
+    <section class="section section--alt" id="piezas">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">02</p>
+          <h2 class="section__title">Piezas destacadas</h2>
+        </header>
+
+        <div class="filters" role="group" aria-label="Filtrar piezas">
+          <button class="filter is-active" data-filter="todo">Todo</button>
+          <button class="filter" data-filter="post">Posts</button>
+          <button class="filter" data-filter="carrusel">Carruseles</button>
+          <button class="filter" data-filter="historia">Historias / Reels</button>
+        </div>
+
+        <div class="pieces">
+          <!-- Posts 4:5 — reemplazar el div.placeholder por <img src="assets/img/piezas/archivo.webp" alt="..."> -->
+          <figure class="piece piece--post" data-type="post">
+            <div class="placeholder">Post 4:5</div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+          <figure class="piece piece--post" data-type="carrusel">
+            <div class="placeholder">Carrusel 4:5</div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+          <figure class="piece piece--story" data-type="historia">
+            <div class="phone"><div class="placeholder">Historia 9:16</div></div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+          <figure class="piece piece--post" data-type="post">
+            <div class="placeholder">Post 4:5</div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+          <figure class="piece piece--story" data-type="historia">
+            <div class="phone"><div class="placeholder">Reel 9:16</div></div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+          <figure class="piece piece--post" data-type="carrusel">
+            <div class="placeholder">Carrusel 4:5</div>
+            <figcaption>[Cuenta · descripción]</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OTROS ================= -->
+    <section class="section" id="otros">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">03</p>
+          <h2 class="section__title">Otros trabajos</h2>
+          <p class="section__lead">Ilustración, identidad y diagramación.</p>
+        </header>
+
+        <div class="others">
+          <article class="other">
+            <div class="placeholder">Biblián Vive</div>
+            <h3>Biblián Vive</h3>
+            <p>[COMPLETAR: descripción corta del proyecto de tesis.]</p>
+          </article>
+          <article class="other">
+            <div class="placeholder">Ilustración</div>
+            <h3>[Proyecto]</h3>
+            <p>[COMPLETAR]</p>
+          </article>
+          <article class="other">
+            <div class="placeholder">Diagramación</div>
+            <h3>[Proyecto]</h3>
+            <p>[COMPLETAR]</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HERRAMIENTAS ================= -->
+    <section class="section section--alt" id="herramientas">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">04</p>
+          <h2 class="section__title">Herramientas</h2>
+        </header>
+
+        <ul class="tools">
+          <li class="tool"><strong>Photoshop</strong><span>[Para qué lo usas]</span></li>
+          <li class="tool"><strong>Illustrator</strong><span>[Para qué lo usas]</span></li>
+          <li class="tool"><strong>InDesign</strong><span>[Para qué lo usas]</span></li>
+          <li class="tool"><strong>Premiere / After Effects</strong><span>[Para qué lo usas]</span></li>
+          <li class="tool"><strong>[Otra herramienta]</strong><span>[Para qué la usas]</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <p class="eyebrow">05</p>
+        <h2 class="section__title">Trabajemos juntos</h2>
+        <p class="section__lead">[COMPLETAR: frase corta de contacto.]</p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:[correo]">[correo]</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Behance</a>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> [Tu nombre] · Diseño Gráfico, Universidad de Cuenca</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
